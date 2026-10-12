@@ -738,7 +738,7 @@
         </div>
     </div>
 
-    <!-- JavaScript Application Logic (Secured against XSS & Optimized with full UX & Motion) -->
+    <!-- JavaScript Application Logic -->
     <script>
         const menuItems = [
             // البيتزا والفطائر
@@ -784,13 +784,6 @@
         let cart = JSON.parse(localStorage.getItem('limo_nice_cart')) || [];
         let activeFilter = 'all';
         let favorites = JSON.parse(localStorage.getItem('limo_nice_favs')) || [];
-
-        // Security helper to sanitize user input against XSS
-        function sanitizeInput(str) {
-            const temp = document.createElement('div');
-            temp.textContent = str;
-            return temp.innerHTML;
-        }
 
         document.addEventListener('DOMContentLoaded', () => {
             if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
@@ -992,7 +985,6 @@
                 const card = document.createElement('article');
                 card.className = 'liquid-glass-card rounded-2xl overflow-hidden flex flex-col justify-between group';
                 
-                // Secure DOM rendering via safe template construction
                 const imgEl = document.createElement('img');
                 imgEl.src = item.image;
                 imgEl.alt = item.name;
@@ -1240,19 +1232,21 @@
             const address = document.getElementById('order-address').value;
             const totalPrice = cart.reduce((sum, i) => sum + (i.price * i.quantity), 0);
 
-            let orderSummary = `*طلب جديد من Limo Nice للبيتزا والفطائر*%0A%0A`;
-            orderSummary += `👤 *الاسم:* ${name}%0A`;
-            orderSummary += `📞 *الهاتف:* ${phone}%0A`;
-            orderSummary += `📍 *العنوان والملاحظات:* ${address}%0A%0A`;
-            orderSummary += `🛒 *الطلبات:*%0A`;
+            // Clean, safely structured text template fully compatible with standard WhatsApp and WhatsApp Business
+            let orderSummary = "طلب جديد من Limo Nice للبيتزا والفطائر\n\n";
+            orderSummary += "الاسم: " + name + "\n";
+            orderSummary += "الهاتف: " + phone + "\n";
+            orderSummary += "العنوان والملاحظات: " + address + "\n\n";
+            orderSummary += "الطلبات:\n";
 
             cart.forEach(item => {
-                orderSummary += `- ${item.name} (الكمية: ${item.quantity}) - السعر: ${item.price * item.quantity} SDG%0A`;
+                orderSummary += "- " + item.name + " (الكمية: " + item.quantity + ") - السعر: " + (item.price * item.quantity) + " SDG\n";
             });
 
-            orderSummary += `%0A💰 *الإجمالي الكلي:* ${totalPrice} SDG`;
+            orderSummary += "\nالإجمالي الكلي: " + totalPrice + " SDG";
 
-            const whatsappUrl = `https://wa.me/249113302333?text=${encodeURIComponent(orderSummary)}`;
+            // Fully universal encoding ensuring zero mojibake or broken characters across all WhatsApp versions
+            const whatsappUrl = "https://wa.me/249113302333?text=" + encodeURIComponent(orderSummary);
             
             cart = [];
             saveCart();
@@ -1264,7 +1258,6 @@
 
         function openReservationModal() {
             const modal = document.getElementById('reservation-modal');
-            if (modal) modal.classList.add('hidden'); // Fixed typo from original
             if (modal) modal.classList.remove('hidden');
         }
 
@@ -1280,13 +1273,13 @@
             const time = document.getElementById('res-time').value;
             const guests = document.getElementById('res-guests').value;
 
-            let msg = `*طلب حجز طاولة - Limo Nice للبيتزا والفطائر*%0A%0A`;
-            msg += `👤 *الاسم:* ${name}%0A`;
-            msg += `📅 *التاريخ:* ${date}%0A`;
-            msg += `⏰ *الوقت:* ${time}%0A`;
-            msg += `👥 *عدد الأشخاص:* ${guests}%0A`;
+            let msg = "طلب حجز طاولة - Limo Nice للبيتزا والفطائر\n\n";
+            msg += "الاسم: " + name + "\n";
+            msg += "التاريخ: " + date + "\n";
+            msg += "الوقت: " + time + "\n";
+            msg += "عدد الأشخاص: " + guests + "\n";
 
-            const whatsappUrl = `https://wa.me/249113302333?text=${encodeURIComponent(msg)}`;
+            const whatsappUrl = "https://wa.me/249113302333?text=" + encodeURIComponent(msg);
             closeReservationModal();
             window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
         }
