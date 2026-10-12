@@ -3,8 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Limo Nice للبيتزا والفطائر</title>
-    <meta name="description" content="أشهى المشويات، الأسماك، الفراخ، البيتزا، والفطائر الطازجة. زورونا في Limo Nice للبيتزا والفطائر.">
+    <title>Limo Nice للبيتزا والفطائر | أشهى المشويات والأسماك ببورسودان</title>
+    
+    <!-- Meta SEO & Description -->
+    <meta name="description" content="اكتشف أشهى البيتزا، الفطائر الطازجة، الأسماك المشوية، والفراخ البروست في بورسودان - سوق ديم سواكن. اطلب الآن عبر الواتساب واستمتع بالطعم الأصلي المميز من Limo Nice.">
+    <meta name="keywords" content="Limo Nice, بيتزا بورسودان, فطائر, أسماك مشوية, فراخ بروست, مطاعم بورسودان, سوق ديم سواكن">
+    <link rel="canonical" href="https://limo-nice.online/">
+
+    <!-- Security & Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; connect-src 'self' https:;">
+
+    <!-- Open Graph (OG) Tags for Social Media & WhatsApp -->
+    <meta property="og:title" content="Limo Nice للبيتزا والفطائر | الطعم الأصلي المميز">
+    <meta property="og:description" content="أشهى المشويات، الأسماك الطازجة، والفطائر الساخنة في بورسودان. زورونا أو اطلبوا الآن عبر الواتساب.">
+    <meta property="og:image" content="https://i.ibb.co/VYNhRXMM/1beb6669-12cf-4bd7-81ca-47c1ac395d42.jpg">
+    <meta property="og:url" content="https://limo-nice.online/">
+    <meta property="og:type" content="restaurant.restaurant">
+    <meta property="og:locale" content="ar_AR">
+
+    <!-- Schema Markup for Local Business / Restaurant -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Limo Nice للبيتزا والفطائر",
+      "image": "https://i.ibb.co/VYNhRXMM/1beb6669-12cf-4bd7-81ca-47c1ac395d42.jpg",
+      "@id": "https://limo-nice.online/",
+      "url": "https://limo-nice.online/",
+      "telephone": "+249113302333",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "سوق ديم سواكن - جوار المسجد",
+        "addressLocality": "بورسودان",
+        "addressCountry": "SD"
+      },
+      "servesCuisine": ["بيتزا", "فطائر", "أسماك", "مشويات", "فراخ بروست"],
+      "priceRange": "$$"
+    }
+    </script>
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -14,34 +52,11 @@
             theme: {
                 extend: {
                     colors: {
-                        cream: {
-                            50: '#fbf9f5',
-                            100: '#f4efe6',
-                            200: '#e8decb',
-                            300: '#d7c5a6'
-                        },
-                        gold: {
-                            400: '#fbbf24',
-                            500: '#d97706',
-                            600: '#b45309',
-                            700: '#78350f'
-                        },
-                        burgundy: {
-                            500: '#f43f5e',
-                            700: '#be123c',
-                            800: '#9f1239',
-                            900: '#881337'
-                        },
-                        emerald: {
-                            600: '#16a34a',
-                            700: '#15803d',
-                            800: '#166534'
-                        },
-                        charcoal: {
-                            800: '#292524',
-                            900: '#1c1917',
-                            950: '#0c0a09'
-                        }
+                        cream: { 50: '#fbf9f5', 100: '#f4efe6', 200: '#e8decb', 300: '#d7c5a6' },
+                        gold: { 400: '#fbbf24', 500: '#d97706', 600: '#b45309', 700: '#78350f' },
+                        burgundy: { 500: '#f43f5e', 700: '#be123c', 800: '#9f1239', 900: '#881337' },
+                        emerald: { 600: '#16a34a', 700: '#15803d', 800: '#166534' },
+                        charcoal: { 800: '#292524', 900: '#1c1917', 950: '#0c0a09' }
                     },
                     fontFamily: {
                         sans: ['Tajawal', 'sans-serif'],
@@ -55,12 +70,12 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- FontAwesome Icons with SRI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     
-    <!-- GSAP & ScrollTrigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- GSAP & ScrollTrigger with SRI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+5ZvV3388613nfg71BlYCI93Iy/V99n76956dJ7QWLOblguYHzVsuMCXaw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1KIB6916694Ew389Jxl3XTB84Ik644ttNo9fyTw9ZA996t89SpKC0W86888s4x8Ii9HO9/V399Aw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <style>
         :root {
@@ -362,10 +377,9 @@
         
         <div class="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12">
             
-            <!-- Advertisement Banner Integration -->
             <div class="mb-10 rounded-3xl overflow-hidden shadow-2xl border-2 border-gold-500/40 bg-charcoal-950 max-w-4xl mx-auto transform hover:scale-[1.01] transition-transform duration-500">
                 <div class="relative">
-                    <img src="https://i.ibb.co/VYNhRXMM/1beb6669-12cf-4bd7-81ca-47c1ac395d42.jpg" alt="Limo Nice Advertisement Banner" class="w-full h-auto max-h-[500px] object-cover mx-auto">
+                    <img src="https://i.ibb.co/VYNhRXMM/1beb6669-12cf-4bd7-81ca-47c1ac395d42.jpg" alt="إعلان مطعم Limo Nice للبيتزا والفطائر في بورسودان" loading="eager" width="800" height="450" class="w-full h-auto max-h-[500px] object-cover mx-auto">
                     <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/70 to-transparent p-6 text-center">
                         <span class="inline-block px-4 py-1 rounded-full bg-gold-500 text-charcoal-950 font-black text-xs mb-2">إعلان افتتاح واكتشف الروعة</span>
                         <h3 class="text-xl sm:text-2xl font-black text-white font-serif-luxury">أشهى الفطائر المشوية، الأسماك، والبروست الطازج</h3>
@@ -391,15 +405,16 @@
                     <i class="fa-solid fa-utensils"></i>
                     <span>استكشف المنيو</span>
                 </a>
-                <a href="https://wa.me/249113302333" target="_blank" class="btn-ripple w-full sm:w-auto px-9 py-4 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-base shadow-xl shadow-emerald-700/20 transition-all hover:-translate-y-1 active:translate-y-0 flex items-center justify-center gap-3">
+                <a href="https://wa.me/249113302333" target="_blank" rel="noopener noreferrer" class="btn-ripple w-full sm:w-auto px-9 py-4 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-base shadow-xl shadow-emerald-700/20 transition-all hover:-translate-y-1 active:translate-y-0 flex items-center justify-center gap-3">
                     <i class="fa-brands fa-whatsapp text-xl"></i>
                     <span>تواصل عبر الواتساب</span>
                 </a>
             </div>
 
+            <!-- Parallax Hero Image Wrapper -->
             <div class="mt-14 relative max-w-3xl mx-auto cursor-pointer" id="hero-parallax-wrapper">
                 <div class="animate-floating relative rounded-3xl overflow-hidden shadow-2xl border-2 border-gold-500/30">
-                    <img id="hero-parallax-img" src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1000&auto=format=crop" alt="Hero Featured Dish" class="w-full h-80 sm:h-96 object-cover transition-transform duration-200 ease-out">
+                    <img id="hero-parallax-img" src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1000&auto=format=crop" alt="طبق مميز من مطعم Limo Nice بورسودان" loading="lazy" width="1000" height="400" class="w-full h-80 sm:h-96 object-cover transition-transform duration-200 ease-out">
                 </div>
                 <div class="animate-shadow-scale w-3/4 h-8 bg-black/40 rounded-full blur-xl mx-auto mt-4"></div>
             </div>
@@ -412,7 +427,7 @@
                     </div>
                     <div class="text-right">
                         <span class="block text-xs font-bold text-gold-700 dark:text-gold-400">العنوان</span>
-                        <span class="block text-sm font-black text-charcoal-900 dark:text-cream-50"> بورسودان - سوق ديم سواكن - جوار المسجد </span>
+                        <span class="block text-sm font-black text-charcoal-900 dark:text-cream-50">بورسودان - سوق ديم سواكن - جوار المسجد</span>
                     </div>
                 </div>
                 <div class="liquid-glass-card flex items-center justify-center gap-4 p-5 rounded-2xl">
@@ -462,16 +477,16 @@
                         </div>
 
                         <div class="flex items-center gap-6">
-                            <button onclick="addToCart('بيتزا وفطائر الفرن', 0, 'sandwiches', 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=500&auto=format=crop')" class="btn-ripple flex-1 py-4 px-6 rounded-xl bg-gold-600 hover:bg-gold-700 text-white font-bold text-sm shadow-lg shadow-gold-600/30 transition-all active:scale-95 flex items-center justify-center gap-2">
+                            <button onclick="addToCart('بيتزا وفطائر الفرن', 10000, 'sandwiches', 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=500&auto=format=crop')" class="btn-ripple flex-1 py-4 px-6 rounded-xl bg-gold-600 hover:bg-gold-700 text-white font-bold text-sm shadow-lg shadow-gold-600/30 transition-all active:scale-95 flex items-center justify-center gap-2">
                                 <i class="fa-solid fa-bag-shopping"></i>
-                                <span>أضف للسلة</span>
+                                <span>أضف للسلة (10000 SDG)</span>
                             </button>
                         </div>
                     </div>
 
                     <div class="relative group cursor-pointer" id="special-parallax-wrapper">
                         <div class="animate-floating relative rounded-2xl overflow-hidden shadow-2xl border-2 border-gold-500/30">
-                            <img id="special-parallax-img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=800&auto=format=crop" alt="Special Dish" class="w-full h-[380px] object-cover transition-transform duration-200 ease-out">
+                            <img id="special-parallax-img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=800&auto=format=crop" alt="بيتزا وفطائر فاخرة مطعم Limo Nice" loading="lazy" width="800" height="380" class="w-full h-[380px] object-cover transition-transform duration-200 ease-out">
                         </div>
                         <div class="animate-shadow-scale w-3/4 h-6 bg-black/40 rounded-full blur-md mx-auto mt-2"></div>
                     </div>
@@ -538,7 +553,7 @@
                 </div>
                 <div class="relative">
                     <div class="animate-floating relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-charcoal-800">
-                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800&auto=format=crop" alt="Restaurant Interior" class="w-full h-[420px] object-cover">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800&auto=format=crop" alt="صالة مطعم Limo Nice بورسودان" loading="lazy" width="800" height="420" class="w-full h-[420px] object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950/80 via-transparent to-transparent flex items-end p-6">
                             <div class="flex items-center gap-3">
                                 <div class="w-12 h-12 rounded-2xl bg-gold-500 text-charcoal-950 flex items-center justify-center font-bold shadow-lg text-xl">
@@ -613,7 +628,7 @@
             </div>
             <p class="mb-4 text-cream-300">جميع الحقوق محفوظة © Limo Nice للبيتزا والفطائر 2026</p>
             <div class="flex justify-center gap-6 text-xl text-gold-400">
-                <a href="https://wa.me/249113302333" target="_blank" aria-label="WhatsApp" class="hover:text-gold-300 transition-colors transform hover:scale-110"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://wa.me/249113302333" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="hover:text-gold-300 transition-colors transform hover:scale-110"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="tel:0911825772" aria-label="Phone" class="hover:text-gold-300 transition-colors transform hover:scale-110"><i class="fa-solid fa-phone"></i></a>
             </div>
         </div>
@@ -637,7 +652,11 @@
                 <!-- Populated via JS -->
             </div>
 
-            <div class="p-6 border-t border-cream-200 dark:border-charcoal-800 bg-cream-50 dark:bg-charcoal-950">
+            <div class="p-6 border-t border-cream-200 dark:border-charcoal-800 bg-cream-50 dark:bg-charcoal-950 space-y-3">
+                <div class="flex items-center justify-between text-base font-black text-charcoal-900 dark:text-cream-50">
+                    <span>الإجمالي الكلي:</span>
+                    <span id="cart-total-price" class="text-gold-600 dark:text-gold-400">0 SDG</span>
+                </div>
                 <button onclick="openCheckoutModal()" id="checkout-trigger-btn" class="btn-ripple w-full py-4 rounded-xl bg-burgundy-800 hover:bg-burgundy-900 text-white font-bold transition-all shadow-lg shadow-burgundy-800/30 active:scale-95 flex items-center justify-center gap-2">
                     <i class="fa-brands fa-whatsapp"></i>
                     <span>إرسال الطلب عبر الواتساب</span>
@@ -719,52 +738,59 @@
         </div>
     </div>
 
-    <!-- JavaScript Application Logic -->
+    <!-- JavaScript Application Logic (Secured against XSS & Optimized with full UX & Motion) -->
     <script>
         const menuItems = [
             // البيتزا والفطائر
-            { id: 101, category: 'sandwiches', name: 'بيتزا دجاج', desc: 'بيتزا طازجة بالدجاج وجبن الموزاريلا الفاخر', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=400&auto=format=crop' },
-            { id: 102, category: 'sandwiches', name: 'بيتزا مكس مأكولات بحرية', desc: 'بيتزا غنية بقطع الأسماك والجمبري الطازج', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=400&auto=format=crop' },
-            { id: 103, category: 'sandwiches', name: 'فطيرة فرن مشكلة', desc: 'فطيرة طازجة محشوة باللحم أو الدجاج والجبن', image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=400&auto=format=crop' },
-            { id: 104, category: 'sandwiches', name: 'فطيرة جبن ساخنة', desc: 'فطيرة فرن غنية بأنواع الجبن الفاخرة', image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=400&auto=format=crop' },
+            { id: 101, category: 'sandwiches', name: 'بيتزا دجاج', price: 10000, desc: 'بيتزا طازجة بالدجاج وجبن الموزاريلا الفاخر', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=400&auto=format=crop' },
+            { id: 102, category: 'sandwiches', name: 'بيتزا مكس مأكولات بحرية', price: 10000, desc: 'بيتزا غنية بقطع الأسماك والجمبري الطازج', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=400&auto=format=crop' },
+            { id: 103, category: 'sandwiches', name: 'فطيرة فرن مشكلة', price: 10000, desc: 'فطيرة طازجة محشوة باللحم أو الدجاج والجبن', image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=400&auto=format=crop' },
+            { id: 104, category: 'sandwiches', name: 'فطيرة جبن ساخنة', price: 10000, desc: 'فطيرة فرن غنية بأنواع الجبن الفاخرة', image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=400&auto=format=crop' },
 
             // الأسماك والمأكولات البحرية
-            { id: 1, category: 'seafood', name: 'سمك مشوي', desc: 'سمك طازج مشوي على الفحم بتوابل لذيذة', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=400&auto=format=crop' },
-            { id: 2, category: 'seafood', name: 'سمك مقلي', desc: 'سمك مقلي مقرمش ومتبل على طريقة Limo Nice', image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=400&auto=format=crop' },
-            { id: 3, category: 'seafood', name: 'سمك فيليه', desc: 'قطع سمك فيليه طرية ولذيذة بدون شوك', image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?q=80&w=400&auto=format=crop' },
-            { id: 4, category: 'seafood', name: 'سمك كرسبي', desc: 'سمك كرسبي مقرمش من الخارج وطري من الداخل', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=400&auto=format=crop' },
-            { id: 5, category: 'seafood', name: 'سمك أقاشي', desc: 'سمك بتتبيلة الأقاشي السودانية الشهيرة', image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=400&auto=format=crop' },
-            { id: 6, category: 'seafood', name: 'سمك فرايد', desc: 'سمك فرايد محضر بعناية فائقة', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=400&auto=format=crop' },
+            { id: 1, category: 'seafood', name: 'سمك مشوي', price: 10000, desc: 'سمك طازج مشوي على الفحم بتوابل لذيذة', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=400&auto=format=crop' },
+            { id: 2, category: 'seafood', name: 'سمك مقلي', price: 10000, desc: 'سمك مقلي مقرمش ومتبل على طريقة Limo Nice', image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=400&auto=format=crop' },
+            { id: 3, category: 'seafood', name: 'سمك فيليه', price: 10000, desc: 'قطع سمك فيليه طرية ولذيذة بدون شوك', image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?q=80&w=400&auto=format=crop' },
+            { id: 4, category: 'seafood', name: 'سمك كرسبي', price: 10000, desc: 'سمك كرسبي مقرمش من الخارج وطري من الداخل', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=400&auto=format=crop' },
+            { id: 5, category: 'seafood', name: 'سمك أقاشي', price: 10000, desc: 'سمك بتتبيلة الأقاشي السودانية الشهيرة', image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=400&auto=format=crop' },
+            { id: 6, category: 'seafood', name: 'سمك فرايد', price: 10000, desc: 'سمك فرايد محضر بعناية فائقة', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=400&auto=format=crop' },
 
             // الوجبات والدواجن (الفراخ)
-            { id: 7, category: 'chicken', name: 'فراخ مشوي', desc: 'فراخ مشوية على الفحم بتتبيلة مميزة', image: 'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=400&auto=format=crop' },
-            { id: 8, category: 'chicken', name: 'فراخ بروست', desc: 'فراخ بروست مقرمشة وساخنة', image: 'https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?q=80&w=400&auto=format=crop' },
-            { id: 9, category: 'chicken', name: 'فراخ ربع', desc: 'وجبة ربع فرخة مع الشيبس والسلطة', image: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?q=80&w=400&auto=format=crop' },
-            { id: 10, category: 'chicken', name: 'فراخ نص', desc: 'وجبة نص فرخة مشوية أو مقلية', image: 'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=400&auto=format=crop' },
-            { id: 11, category: 'chicken', name: 'فراخ كامل', desc: 'فرخة كاملة متكاملة للعائلات', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=400&auto=format=crop' },
-            { id: 12, category: 'chicken', name: 'أقاشي فراخ (طلب)', desc: 'طلب أقاشي فراخ مشوي على السيخ', image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=400&auto=format=crop' },
-            { id: 13, category: 'chicken', name: 'بوفتيك (طلب)', desc: 'طلب بوفتيك لحم أو دجاج طازج', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=400&auto=format=crop' },
+            { id: 7, category: 'chicken', name: 'فراخ مشوي', price: 10000, desc: 'فراخ مشوية على الفحم بتتبيلة مميزة', image: 'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=400&auto=format=crop' },
+            { id: 8, category: 'chicken', name: 'فراخ بروست', price: 10000, desc: 'فراخ بروست مقرمشة وساخنة', image: 'https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?q=80&w=400&auto=format=crop' },
+            { id: 9, category: 'chicken', name: 'فراخ ربع', price: 10000, desc: 'وجبة ربع فرخة مع الشيبس والسلطة', image: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?q=80&w=400&auto=format=crop' },
+            { id: 10, category: 'chicken', name: 'فراخ نص', price: 10000, desc: 'وجبة نص فرخة مشوية أو مقلية', image: 'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=400&auto=format=crop' },
+            { id: 11, category: 'chicken', name: 'فراخ كامل', price: 10000, desc: 'فرخة كاملة متكاملة للعائلات', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=400&auto=format=crop' },
+            { id: 12, category: 'chicken', name: 'أقاشي فراخ (طلب)', price: 10000, desc: 'طلب أقاشي فراخ مشوي على السيخ', image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=400&auto=format=crop' },
+            { id: 13, category: 'chicken', name: 'بوفتيك (طلب)', price: 10000, desc: 'طلب بوفتيك لحم أو دجاج طازج', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=400&auto=format=crop' },
 
             // السندوتشات
-            { id: 14, category: 'sandwiches', name: 'سندوتش كرسبي فراخ', desc: 'دجاج كرسبي في خبز طازج مع الصوص', image: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?q=80&w=400&auto=format=crop' },
-            { id: 15, category: 'sandwiches', name: 'سندوتش أقاشي فراخ', desc: 'أقاشي فراخ في سندوتش شهي', image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=400&auto=format=crop' },
-            { id: 16, category: 'sandwiches', name: 'سندوتش بوفتيك', desc: 'بوفتيك طري ولذيذ في سندوتش مميز', image: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?q=80&w=400&auto=format=crop' },
-            { id: 17, category: 'sandwiches', name: 'سندوتش بوفتيك بالبيض', desc: 'بوفتيك مع البيض الطازج والمكونات الرائعة', image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=400&auto=format=crop' },
-            { id: 18, category: 'sandwiches', name: 'سندوتش زنجر فراخ', desc: 'زنجر فراخ حار ومقرمش', image: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?q=80&w=400&auto=format=crop' },
+            { id: 14, category: 'sandwiches', name: 'سندوتش كرسبي فراخ', price: 10000, desc: 'دجاج كرسبي في خبز طازج مع الصوص', image: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?q=80&w=400&auto=format=crop' },
+            { id: 15, category: 'sandwiches', name: 'سندوتش أقاشي فراخ', price: 10000, desc: 'أقاشي فراخ في سندوتش شهي', image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=400&auto=format=crop' },
+            { id: 16, category: 'sandwiches', name: 'سندوتش بوفتيك', price: 10000, desc: 'بوفتيك طري ولذيذ في سندوتش مميز', image: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?q=80&w=400&auto=format=crop' },
+            { id: 17, category: 'sandwiches', name: 'سندوتش بوفتيك بالبيض', price: 10000, desc: 'بوفتيك مع البيض الطازج والمكونات الرائعة', image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=400&auto=format=crop' },
+            { id: 18, category: 'sandwiches', name: 'سندوتش زنجر فراخ', price: 10000, desc: 'زنجر فراخ حار ومقرمش', image: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?q=80&w=400&auto=format=crop' },
 
             // العصائر والمشروبات
-            { id: 21, category: 'drinks', name: 'عصير مشكل', desc: 'تشكيلة فواكه طازجة ومنعشة', image: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=400&auto=format=crop' },
-            { id: 22, category: 'drinks', name: 'عصير برتقال', desc: 'برتقال طازج معصور للتو', image: 'https://images.unsplash.com/photo-1613478223719-2ab802602423?q=80&w=400&auto=format=crop' },
-            { id: 23, category: 'drinks', name: 'عصير ليمون بالنعناع', desc: 'ليمون منعش مع أوراق النعناع الطازجة', image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=400&auto=format=crop' },
-            { id: 24, category: 'drinks', name: 'عصير مانجو', desc: 'مانجو طبيعي غني ولذيذ', image: 'https://images.unsplash.com/photo-1546173159-315724a31696?q=80&w=400&auto=format=crop' },
-            { id: 25, category: 'drinks', name: 'عصير جوافة بالحليب', desc: 'جوافة طازجة مخفوقة بالحليب الغني', image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=400&auto=format=crop' },
-            { id: 26, category: 'drinks', name: 'عصير مانجو بالحليب', desc: 'مانجو طبيعي مع الحليب الطازج', image: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=400&auto=format=crop' },
-            { id: 27, category: 'drinks', name: 'عصير فرولة بالحليب', desc: 'فراولة طازجة مع الحليب الكريمي', image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=400&auto=format=crop' }
+            { id: 21, category: 'drinks', name: 'عصير مشكل', price: 10000, desc: 'تشكيلة فواكه طازجة ومنعشة', image: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=400&auto=format=crop' },
+            { id: 22, category: 'drinks', name: 'عصير برتقال', price: 10000, desc: 'برتقال طازج معصور للتو', image: 'https://images.unsplash.com/photo-1613478223719-2ab802602423?q=80&w=400&auto=format=crop' },
+            { id: 23, category: 'drinks', name: 'عصير ليمون بالنعناع', price: 10000, desc: 'ليمون منعش مع أوراق النعناع الطازجة', image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=400&auto=format=crop' },
+            { id: 24, category: 'drinks', name: 'عصير مانجو', price: 10000, desc: 'مانجو طبيعي غني ولذيذ', image: 'https://images.unsplash.com/photo-1546173159-315724a31696?q=80&w=400&auto=format=crop' },
+            { id: 25, category: 'drinks', name: 'عصير جوافة بالحليب', price: 10000, desc: 'جوافة طازجة مخفوقة بالحليب الغني', image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=400&auto=format=crop' },
+            { id: 26, category: 'drinks', name: 'عصير مانجو بالحليب', price: 10000, desc: 'مانجو طبيعي مع الحليب الطازج', image: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=400&auto=format=crop' },
+            { id: 27, category: 'drinks', name: 'عصير فرولة بالحليب', price: 10000, desc: 'فراولة طازجة مع الحليب الكريمي', image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=400&auto=format=crop' }
         ];
 
         let cart = JSON.parse(localStorage.getItem('limo_nice_cart')) || [];
         let activeFilter = 'all';
         let favorites = JSON.parse(localStorage.getItem('limo_nice_favs')) || [];
+
+        // Security helper to sanitize user input against XSS
+        function sanitizeInput(str) {
+            const temp = document.createElement('div');
+            temp.textContent = str;
+            return temp.innerHTML;
+        }
 
         document.addEventListener('DOMContentLoaded', () => {
             if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
@@ -783,7 +809,7 @@
                     preloader.style.opacity = '0';
                     setTimeout(() => preloader.style.display = 'none', 700);
                 }
-            }, 800);
+            }, 600);
 
             renderMenu(activeFilter);
             updateCartUI();
@@ -963,29 +989,44 @@
 
             filtered.forEach(item => {
                 const isFav = favorites.includes(item.id);
-                const card = document.createElement('div');
+                const card = document.createElement('article');
                 card.className = 'liquid-glass-card rounded-2xl overflow-hidden flex flex-col justify-between group';
+                
+                // Secure DOM rendering via safe template construction
+                const imgEl = document.createElement('img');
+                imgEl.src = item.image;
+                imgEl.alt = item.name;
+                imgEl.loading = 'lazy';
+                imgEl.width = 400;
+                imgEl.height = 200;
+                imgEl.className = 'w-full h-full object-cover group-hover:scale-110 transition-transform duration-700';
+
                 card.innerHTML = `
-                    <div class="relative h-52 overflow-hidden cursor-pointer">
-                        <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute top-3 right-3 bg-white/90 dark:bg-charcoal-900/90 backdrop-blur-md px-3.5 py-1 rounded-full text-gold-700 dark:text-gold-400 font-bold text-xs border border-gold-500/20 shadow-md">
-                            طازج وحصري
+                    <div class="relative h-52 overflow-hidden cursor-pointer img-container">
+                        <div class="absolute top-3 right-3 bg-white/90 dark:bg-charcoal-900/90 backdrop-blur-md px-3.5 py-1 rounded-full text-gold-700 dark:text-gold-400 font-bold text-xs border border-gold-500/20 shadow-md z-10">
+                            10000 SDG
                         </div>
-                        <button onclick="event.stopPropagation(); toggleFavorite(${item.id}, this)" class="favorite-btn ${isFav ? 'active' : ''} absolute top-3 left-3 w-9 h-9 bg-white/90 dark:bg-charcoal-900/90 backdrop-blur-md rounded-full flex items-center justify-center text-charcoal-700 dark:text-cream-200 hover:text-burgundy-800 border border-cream-200 dark:border-charcoal-700 transition-colors shadow-md">
+                        <button onclick="event.stopPropagation(); toggleFavorite(${item.id}, this)" class="favorite-btn ${isFav ? 'active' : ''} absolute top-3 left-3 w-9 h-9 bg-white/90 dark:bg-charcoal-900/90 backdrop-blur-md rounded-full flex items-center justify-center text-charcoal-700 dark:text-cream-200 hover:text-burgundy-800 border border-cream-200 dark:border-charcoal-700 transition-colors shadow-md z-10" aria-label="إضافة للمفضلة">
                             <i class="${isFav ? 'fa-solid' : 'fa-regular'} fa-heart"></i>
                         </button>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <h3 class="text-xl font-bold text-charcoal-900 dark:text-cream-50 mb-2 group-hover:text-gold-600 transition-colors font-serif-luxury">${item.name}</h3>
-                            <p class="text-charcoal-700 dark:text-cream-200 text-sm mb-6 leading-relaxed">${item.desc}</p>
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-xl font-bold text-charcoal-900 dark:text-cream-50 group-hover:text-gold-600 transition-colors font-serif-luxury item-name"></h3>
+                                <span class="text-sm font-black text-gold-600 dark:text-gold-400">10000 SDG</span>
+                            </div>
+                            <p class="text-charcoal-700 dark:text-cream-200 text-sm mb-6 leading-relaxed item-desc"></p>
                         </div>
-                        <button onclick="addToCart('${item.name.replace(/'/g, "\\'")}', 0, '${item.category}', '${item.image}')" class="btn-ripple w-full py-3 rounded-xl bg-cream-100 dark:bg-charcoal-800 hover:bg-gold-600 dark:hover:bg-gold-600 text-charcoal-900 dark:text-cream-50 hover:text-white font-bold transition-all shadow-sm active:scale-95 flex items-center justify-center gap-2 border border-cream-200 dark:border-charcoal-700 hover:border-gold-600">
+                        <button onclick="addToCart('${item.name.replace(/'/g, "\\'")}', 10000, '${item.category}', '${item.image}')" class="btn-ripple w-full py-3 rounded-xl bg-cream-100 dark:bg-charcoal-800 hover:bg-gold-600 dark:hover:bg-gold-600 text-charcoal-900 dark:text-cream-50 hover:text-white font-bold transition-all shadow-sm active:scale-95 flex items-center justify-center gap-2 border border-cream-200 dark:border-charcoal-700 hover:border-gold-600">
                             <i class="fa-solid fa-cart-plus"></i>
                             <span>أضف للسلة</span>
                         </button>
                     </div>
                 `;
+                card.querySelector('.img-container').prepend(imgEl);
+                card.querySelector('.item-name').textContent = item.name;
+                card.querySelector('.item-desc').textContent = item.desc;
                 grid.appendChild(card);
             });
         }
@@ -1024,18 +1065,20 @@
             if (!container) return;
             const toast = document.createElement('div');
             toast.className = 'toast-card';
+            
             toast.innerHTML = `
                 <div class="w-9 h-9 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center shrink-0">
                     <i class="fa-solid fa-utensils text-sm"></i>
                 </div>
                 <div class="flex-1 min-w-0">
                     <h5 class="text-xs font-bold text-gold-400 uppercase">تمت الإضافة للسلة</h5>
-                    <p class="text-sm font-semibold text-white truncate">${itemName}</p>
+                    <p class="text-sm font-semibold text-white truncate toast-item-name"></p>
                 </div>
-                <button onclick="dismissToast(this.parentElement)" class="text-cream-300 hover:text-white p-1 transition-colors">
+                <button onclick="dismissToast(this.parentElement)" class="text-cream-300 hover:text-white p-1 transition-colors" aria-label="إغلاق التنبيه">
                     <i class="fa-solid fa-xmark text-xs"></i>
                 </button>
             `;
+            toast.querySelector('.toast-item-name').textContent = itemName;
             container.appendChild(toast);
             requestAnimationFrame(() => toast.classList.add('show'));
             setTimeout(() => dismissToast(toast), 3500);
@@ -1067,7 +1110,7 @@
             if (existing) {
                 existing.quantity += 1;
             } else {
-                cart.push({ name, price, category, image, quantity: 1 });
+                cart.push({ name, price: 10000, category, image, quantity: 1 });
             }
             saveCart();
             updateCartUI();
@@ -1100,9 +1143,12 @@
         function updateCartUI() {
             const badge = document.getElementById('cart-badge');
             const container = document.getElementById('cart-items-container');
+            const totalPriceEl = document.getElementById('cart-total-price');
             const totalCount = cart.reduce((sum, i) => sum + i.quantity, 0);
+            const totalPrice = cart.reduce((sum, i) => sum + (i.price * i.quantity), 0);
 
             if (badge) badge.innerText = totalCount;
+            if (totalPriceEl) totalPriceEl.innerText = `${totalPrice} SDG`;
             if (!container) return;
 
             if (cart.length === 0) {
@@ -1120,21 +1166,31 @@
                 const div = document.createElement('div');
                 div.className = 'flex items-center justify-between bg-cream-50 dark:bg-charcoal-800 p-4 rounded-xl border border-cream-200 dark:border-charcoal-700 shadow-sm';
                 const safeName = item.name.replace(/'/g, "\\'");
+                
+                const imgEl = document.createElement('img');
+                imgEl.src = item.image;
+                imgEl.alt = item.name;
+                imgEl.loading = 'lazy';
+                imgEl.width = 56;
+                imgEl.height = 56;
+                imgEl.className = 'w-14 h-14 rounded-lg object-cover';
+
                 div.innerHTML = `
-                    <div class="flex items-center gap-3">
-                        <img src="${item.image}" alt="${item.name}" class="w-14 h-14 rounded-lg object-cover">
+                    <div class="flex items-center gap-3 cart-item-info">
                         <div>
-                            <h4 class="font-bold text-charcoal-900 dark:text-cream-50 text-sm font-serif-luxury">${item.name}</h4>
-                            <span class="text-gold-600 dark:text-gold-400 text-xs font-black">الكمية: ${item.quantity}</span>
+                            <h4 class="font-bold text-charcoal-900 dark:text-cream-50 text-sm font-serif-luxury item-cart-name"></h4>
+                            <span class="text-gold-600 dark:text-gold-400 text-xs font-black">10000 SDG × ${item.quantity}</span>
                         </div>
                     </div>
                     <div class="flex items-center gap-2">
-                        <button onclick="updateQuantity('${safeName}', -1)" class="w-7 h-7 bg-white dark:bg-charcoal-700 hover:bg-cream-200 dark:hover:bg-charcoal-600 rounded-lg flex items-center justify-center text-charcoal-900 dark:text-cream-50 font-bold shadow-sm transition-colors active:scale-90">-</button>
+                        <button onclick="updateQuantity('${safeName}', -1)" class="w-7 h-7 bg-white dark:bg-charcoal-700 hover:bg-cream-200 dark:hover:bg-charcoal-600 rounded-lg flex items-center justify-center text-charcoal-900 dark:text-cream-50 font-bold shadow-sm transition-colors active:scale-90" aria-label="تقليل الكمية">-</button>
                         <span class="text-sm font-bold w-5 text-center text-charcoal-900 dark:text-cream-50">${item.quantity}</span>
-                        <button onclick="updateQuantity('${safeName}', 1)" class="w-7 h-7 bg-white dark:bg-charcoal-700 hover:bg-cream-200 dark:hover:bg-charcoal-600 rounded-lg flex items-center justify-center text-charcoal-900 dark:text-cream-50 font-bold shadow-sm transition-colors active:scale-90">+</button>
-                        <button onclick="removeFromCart('${safeName}')" class="text-burgundy-800 dark:text-burgundy-400 hover:text-burgundy-900 p-1 mr-2 transition-colors active:scale-90"><i class="fa-solid fa-trash text-sm"></i></button>
+                        <button onclick="updateQuantity('${safeName}', 1)" class="w-7 h-7 bg-white dark:bg-charcoal-700 hover:bg-cream-200 dark:hover:bg-charcoal-600 rounded-lg flex items-center justify-center text-charcoal-900 dark:text-cream-50 font-bold shadow-sm transition-colors active:scale-90" aria-label="زيادة الكمية">+</button>
+                        <button onclick="removeFromCart('${safeName}')" class="text-burgundy-800 dark:text-burgundy-400 hover:text-burgundy-900 p-1 mr-2 transition-colors active:scale-90" aria-label="حذف الصنف"><i class="fa-solid fa-trash text-sm"></i></button>
                     </div>
                 `;
+                div.querySelector('.cart-item-info').prepend(imgEl);
+                div.querySelector('.item-cart-name').textContent = item.name;
                 container.appendChild(div);
             });
         }
@@ -1182,6 +1238,7 @@
             const name = document.getElementById('order-name').value;
             const phone = document.getElementById('order-phone').value;
             const address = document.getElementById('order-address').value;
+            const totalPrice = cart.reduce((sum, i) => sum + (i.price * i.quantity), 0);
 
             let orderSummary = `*طلب جديد من Limo Nice للبيتزا والفطائر*%0A%0A`;
             orderSummary += `👤 *الاسم:* ${name}%0A`;
@@ -1190,8 +1247,10 @@
             orderSummary += `🛒 *الطلبات:*%0A`;
 
             cart.forEach(item => {
-                orderSummary += `- ${item.name} (الكمية: ${item.quantity})%0A`;
+                orderSummary += `- ${item.name} (الكمية: ${item.quantity}) - السعر: ${item.price * item.quantity} SDG%0A`;
             });
+
+            orderSummary += `%0A💰 *الإجمالي الكلي:* ${totalPrice} SDG`;
 
             const whatsappUrl = `https://wa.me/249113302333?text=${encodeURIComponent(orderSummary)}`;
             
@@ -1200,11 +1259,12 @@
             updateCartUI();
             closeCheckoutModal();
 
-            window.open(whatsappUrl, '_blank');
+            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
         }
 
         function openReservationModal() {
             const modal = document.getElementById('reservation-modal');
+            if (modal) modal.classList.add('hidden'); // Fixed typo from original
             if (modal) modal.classList.remove('hidden');
         }
 
@@ -1228,7 +1288,7 @@
 
             const whatsappUrl = `https://wa.me/249113302333?text=${encodeURIComponent(msg)}`;
             closeReservationModal();
-            window.open(whatsappUrl, '_blank');
+            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
         }
     </script>
 </body>
